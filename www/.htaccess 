@@ -1,0 +1,2 @@
+ErrorDocument 404 "<H1>Pagina no encontrada - 404</H1>"
+ErrorDocument 403 "<head><title>ERROR 403<title></head><body> <h1>NO TIENE PERMISO</h1></body>"

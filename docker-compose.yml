@@ -1,0 +1,13 @@
+version: '3'
+services:
+  apache:
+    image: 'bitnami/apache:latest'
+    ports:
+      - 80:8080
+      - 443:8443
+    environment:
+      - APACHE_HTTP_PORT_NUMBER=8080
+      - APACHE_HTTPS_PORT_NUMBER=8443
+    volumes:
+    - ./hosts/:/vhosts:ro
+    - ./www:/app
