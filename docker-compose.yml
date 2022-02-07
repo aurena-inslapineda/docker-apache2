@@ -1,5 +1,11 @@
 version: '3'
 services:
+  php:
+    image: bitnami/php-fpm:latest
+    ports:
+      - 9000:9000
+    volumes:
+      - ./www:/app
   apache:
     image: 'bitnami/apache:latest'
     ports:
@@ -11,3 +17,5 @@ services:
     volumes:
     - ./hosts/:/vhosts:ro
     - ./www:/app
+    - ./conf/httpd.conf:/opt/bitnami/apache/conf/httpd.conf
+    - ./conf/httpdrewrite.conf:/opt/bitnami/apache/conf/httpdrewrite.conf
