@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^menu$ index.php [NC,L]
+RewriteRule ^newclient$ index.php?accio=new_client [NC,L]
+RewriteRule ^newcompte$ index.php?accio=new_compte [NC,L]
+RewriteRule ^([A-Za-z0-9-]+)$ index.php?accio=$1 [NC,L]
+
+
