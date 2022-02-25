@@ -19,3 +19,4 @@ services:
     - ./www:/app
     - ./conf/httpd.conf:/opt/bitnami/apache/conf/httpd.conf
     - ./conf/httpdrewrite.conf:/opt/bitnami/apache/conf/httpdrewrite.conf
+    - ./passwd/:/passwd/
