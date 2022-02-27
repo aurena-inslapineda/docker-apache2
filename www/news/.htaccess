@@ -1,0 +1,20 @@
+# AllowOverride AuthConfig
+# AuthBasicProvider file
+# AuthType Basic
+# AuthUserFile "/passwd/passwords"
+# Options Indexes FollowSymLinks MultiViews
+# Order allow,deny
+# Require all granted
+# Allow from all
+# <Files "sportsnews.html">
+#     AuthName "sports"
+#     Require user sports
+# </Files>
+# <Files "nationalnews.html">
+#     AuthName "national"
+#     Require user national
+# </Files>
+# <Files "index.html">
+#     AuthName "index"
+#     Require valid-user
+# </Files>
